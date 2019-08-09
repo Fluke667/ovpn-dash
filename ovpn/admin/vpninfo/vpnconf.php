@@ -1,7 +1,7 @@
 
 <?php
 $output = shell_exec("./showconf.sh");
-$changedate=shell_exec("stat -c %y /etc/openvpn/server.conf");
+$changedate=shell_exec("stat -c %y /etc/openvpn/openvpn.conf");
 
 $hostname = shell_exec('hostname');
 $date = shell_exec('date "+%A %W %Y %X"');
