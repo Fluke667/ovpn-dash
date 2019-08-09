@@ -27,7 +27,7 @@ $pageTitle = "openVPN server CA revocation list";
 			<p>
 			<a class="btn btn-primary btn-lg" href="javascript:history.go(-1)" role="button">back</a><tab>
 			<a class="btn btn-primary btn-lg" style="margin-left: 6px !IMPORTANT;"  href="javascript:window.location.reload(true)" role="button">reload</a><tab>
-			<a class="btn btn-primary btn-lg" style="margin-left: 6px !IMPORTANT;"  href="../vpnusers/forcerevoke" role="button">Revoke cert</a><tab>
+			<a class="btn btn-primary btn-lg" style="margin-left: 6px !IMPORTANT;"  href="../vpnusers/forcerevoke.php" role="button">Revoke cert</a><tab>
 			</p>
 
 <br>
