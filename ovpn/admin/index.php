@@ -110,7 +110,7 @@ $pageTitle = "openVPN Dashboard";
 
 <div class='col-lg-12'>
 						
-<pre><b><div class="pull-left"><a href='/admin/vpninfo/vpninfo'>View connections and routing table</a></div></b></pre>
+<pre><b><div class="pull-left"><a href='/admin/vpninfo/vpninfo.php'>View connections and routing table</a></div></b></pre>
 
 </div>						
 						
