@@ -17,7 +17,7 @@ $lzo = $_GET['lzo'];
 <head>
 
 
-	<meta http-equiv="refresh" content="6;url=/admin/vpnconfig/editconf" />
+	<meta http-equiv="refresh" content="6;url=/admin/vpnconfig/editconf.php" />
 
 	<title>DSC ChangeConf</title>
 	<?php include '../header.php'; ?>
