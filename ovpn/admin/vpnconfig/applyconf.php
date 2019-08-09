@@ -13,7 +13,7 @@ $confname = $_GET['confname'];
 
 
 		<?php include '../header.php'; ?>
-	<meta http-equiv="refresh" content="3;url=/admin/vpnconfig/cleanup" />
+	<meta http-equiv="refresh" content="3;url=/admin/vpnconfig/cleanup.php" />
 </head>
 
 
