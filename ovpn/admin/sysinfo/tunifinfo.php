@@ -1,6 +1,6 @@
 
 <?php
-$ifinfo = shell_exec('ifconfig tun0');
+$ifinfo = shell_exec('ifconfig tun1');
 $hostname = shell_exec('hostname');
 $date = shell_exec('date "+%A %W %Y %X"');
 //echo "<pre>$output</pre>";
