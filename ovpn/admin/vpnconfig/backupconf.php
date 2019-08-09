@@ -5,7 +5,7 @@ $date = str_replace(array("\r", "\n"), '', $date);
 $hostname = shell_exec('hostname');
 $hostname = str_replace(array("\r", "\n"), '', $hostname);
 
-$downloadfile = "/etc/openvpn/server.conf";
+$downloadfile = "/etc/openvpn/openvpn.conf";
 $filesize = filesize($downloadfile);
 
 $filename = $hostname;
