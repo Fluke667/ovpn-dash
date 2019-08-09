@@ -8,7 +8,7 @@
 		<li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false" id="vpnStats">vpnStatus <span class="caret"></span></a>
 				  <ul class="dropdown-menu" aria-labelledby="vpnStats">
-					<li><a href="/admin/sysinfo/tunifinfo.php">tun0 statistics</a></li>
+					<li><a href="/admin/sysinfo/tunifinfo.php">tun1 statistics</a></li>
 					<li><a href="/admin/vpninfo/vpninfo.php">Connection statistics</a></li>
 					<li><a href="/admin/vpninfo/vpnlog.php">View openVPN logfile</a></li>
 					<li><a href="/admin/vpninfo/vpnconf.php">View server config</a></li>
