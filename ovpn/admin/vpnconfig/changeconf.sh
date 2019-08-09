@@ -64,8 +64,8 @@ done
 #change protocol entry
 if [[ -n $PROTOCOL ]] 
 then
-	OLDPROTOCOL=$(cat /etc/openvpn/server.conf | grep proto)
-	sed -i -e 's/'"$OLDPROTOCOL"'/'"proto $PROTOCOL"'/g' /etc/openvpn/server.conf 
+	OLDPROTOCOL=$(cat /etc/openvpn/openvpn.conf | grep proto)
+	sed -i -e 's/'"$OLDPROTOCOL"'/'"proto $PROTOCOL"'/g' /etc/openvpn/openvpn.conf 
 fi
 
 #change port entry
@@ -73,8 +73,8 @@ if [[ -n $PORT ]]
 then
 
 	#change protocol entry
-	OLDPORT=$(cat /etc/openvpn/server.conf | grep port)
-	sed -i -e 's/'"$OLDPORT"'/'"port $PORT"'/g' /etc/openvpn/server.conf 
+	OLDPORT=$(cat /etc/openvpn/openvpn.conf | grep port)
+	sed -i -e 's/'"$OLDPORT"'/'"port $PORT"'/g' /etc/openvpn/openvpn.conf 
 fi
 
 
@@ -88,8 +88,8 @@ then
 		#echo "$NEWNET"
 		#exit 1		
 		#change protocol entry
-		OLDNET=$(cat /etc/openvpn/server.conf | grep "server ")
-		sed -i -e 's/'"$OLDNET"'/'"server $SUBNET $NETMASK"'/g' /etc/openvpn/server.conf 
+		OLDNET=$(cat /etc/openvpn/openvpn.conf | grep "server ")
+		sed -i -e 's/'"$OLDNET"'/'"server $SUBNET $NETMASK"'/g' /etc/openvpn/openvpn.conf 
 	fi
 fi
 
@@ -98,8 +98,8 @@ fi
 if [[ -n $CIPHER ]] 
 then
 	#change protocol entry
-	OLDCIPHER=$(cat /etc/openvpn/server.conf | grep cipher)
-	sed -i -e 's/'"$OLDCIPHER"'/'"cipher $CIPHER"'/g' /etc/openvpn/server.conf 
+	OLDCIPHER=$(cat /etc/openvpn/openvpn.conf | grep cipher)
+	sed -i -e 's/'"$OLDCIPHER"'/'"cipher $CIPHER"'/g' /etc/openvpn/openvpn.conf 
 fi
 
 
@@ -107,12 +107,12 @@ fi
 if [[ -n $INTERCLIENT ]] 
 then
 	#change protocol entry
-	OLDINTER=$(cat /etc/openvpn/server.conf | grep client-to-client)
+	OLDINTER=$(cat /etc/openvpn/openvpn.conf | grep client-to-client)
 
 	if [ $INTERCLIENT -eq "1" ];	then
-		sed -i -e 's/'"$OLDINTER"'/'"client-to-client"'/g' /etc/openvpn/server.conf 
+		sed -i -e 's/'"$OLDINTER"'/'"client-to-client"'/g' /etc/openvpn/openvpn.conf 
 	else
-		sed -i -e 's/'"$OLDINTER"'/'";client-to-client"'/g' /etc/openvpn/server.conf 
+		sed -i -e 's/'"$OLDINTER"'/'";client-to-client"'/g' /etc/openvpn/openvpn.conf 
 	
 	fi
 fi
@@ -122,12 +122,12 @@ fi
 if [[ -n $LZO ]] 
 then
 	#change protocol entry
-	OLDLZO=$(cat /etc/openvpn/server.conf | grep lzo)
+	OLDLZO=$(cat /etc/openvpn/openvpn.conf | grep lzo)
 
 	if [ $LZO -eq "1" ];	then
-		sed -i -e 's/'"$OLDLZO"'/'"comp-lzo"'/g' /etc/openvpn/server.conf 
+		sed -i -e 's/'"$OLDLZO"'/'"comp-lzo"'/g' /etc/openvpn/openvpn.conf 
 	else
-		sed -i -e 's/'"$OLDLZO"'/'";comp-lzo"'/g' /etc/openvpn/server.conf 
+		sed -i -e 's/'"$OLDLZO"'/'";comp-lzo"'/g' /etc/openvpn/openvpn.conf 
 	
 	fi
 fi
