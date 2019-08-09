@@ -1,2 +1,2 @@
 #!/bin/sh
-cat /etc/openvpn/server.conf
+cat /etc/openvpn/openvpn.conf
