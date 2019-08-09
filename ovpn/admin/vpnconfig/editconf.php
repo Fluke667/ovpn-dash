@@ -2,9 +2,9 @@
 $date = shell_exec('date "+%A %W %Y %X"');
 $hostname = shell_exec('hostname');
 
-$proto = shell_exec("cat /etc/openvpn/server.conf | grep proto | cut -c 7-");
-$port  = shell_exec("cat /etc/openvpn/server.conf | grep port  | cut -c 6-");
-$serverNet = shell_exec("cat /etc/openvpn/server.conf | grep server | cut -c 8-");
+$proto = shell_exec("cat /etc/openvpn/openvpn.conf | grep proto | cut -c 7-");
+$port  = shell_exec("cat /etc/openvpn/openvpn.conf | grep port  | cut -c 6-");
+$serverNet = shell_exec("cat /etc/openvpn/openvpn.conf | grep server | cut -c 8-");
 $serverNetArr = explode(' ', $serverNet);
 
 
@@ -36,18 +36,18 @@ function startsWith($haystack, $needle)
 }
 
 
-							$serverNet = shell_exec("cat /etc/openvpn/server.conf | grep 'server ' | cut -c 8-");
+							$serverNet = shell_exec("cat /etc/openvpn/openvpn.conf | grep 'server ' | cut -c 8-");
 							$serverNet = str_replace(array("\r", "\n"), '', $serverNet);
 							$serverNetArr = explode(' ', $serverNet);
-							$proto = shell_exec("cat /etc/openvpn/server.conf | grep proto | cut -c 7-");
+							$proto = shell_exec("cat /etc/openvpn/openvpn.conf | grep proto | cut -c 7-");
 							$proto = str_replace(array("\r", "\n"), '', $proto);
-							$port  = shell_exec("cat /etc/openvpn/server.conf | grep port  | cut -c 6-");
+							$port  = shell_exec("cat /etc/openvpn/openvpn.conf | grep port  | cut -c 6-");
 							$port = str_replace(array("\r", "\n"), '', $port);
-							$cipher  = shell_exec("cat /etc/openvpn/server.conf | grep 'cipher '  | cut -c 8-");
+							$cipher  = shell_exec("cat /etc/openvpn/openvpn.conf | grep 'cipher '  | cut -c 8-");
 							$cipher = str_replace(array("\r", "\n"), '', $cipher);
-							$interclient  = shell_exec("cat /etc/openvpn/server.conf | grep 'client-to-client'");
+							$interclient  = shell_exec("cat /etc/openvpn/openvpn.conf | grep 'client-to-client'");
 							$interclient = str_replace(array("\r", "\n"), '', $interclient);
-							$compression  = shell_exec("cat /etc/openvpn/server.conf | grep 'comp-lzo'");
+							$compression  = shell_exec("cat /etc/openvpn/openvpn.conf | grep 'comp-lzo'");
 							$compression = str_replace(array("\r", "\n"), '', $compression);
 
 
@@ -257,6 +257,5 @@ $compression="enabled";
 </div>
 	</body>
 </html>
-
 
 
