@@ -37,7 +37,7 @@ $ovpnstatus=shell_exec('sudo /var/www/html/admin/vpnconfig/ovpnservicestatus.sh'
 echo $ovpnstatus;
  ?></pre>
 
-					<div ><br><a class="btn btn-primary btn-lg btn-danger" href="/admin/vpnconfig/restartovpnservice" role="button">Restart openVPN service</a></div>
+					<div ><br><a class="btn btn-primary btn-lg btn-danger" href="/admin/vpnconfig/restartovpnservice.php" role="button">Restart openVPN service</a></div>
 
 
 <br><br></div><br><br>
