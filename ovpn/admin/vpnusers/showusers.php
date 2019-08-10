@@ -36,13 +36,13 @@ $pageTitle = "Peer overview";
 		  </button>
 		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 			<?php foreach ($users as &$user){
-				echo '<li><a href="/admin/vpnusers/userdetails?username='.$user.'">';
+				echo '<li><a href="/admin/vpnusers/userdetails.php?username='.$user.'">';
 				echo $user;
 				echo '</a></li>';
 			}?>			
 			
 		  </ul>
-		  <a class="btn btn-default dropdown-toggle" role="button" id="dropdownMenu1" href="/admin/vpnusers/adduser">Add new peer</a>
+		  <a class="btn btn-default dropdown-toggle" role="button" id="dropdownMenu1" href="/admin/vpnusers/adduser.php">Add new peer</a>
 			
 		</div>
 
@@ -57,7 +57,7 @@ $pageTitle = "Peer overview";
 				echo "<div class='alert alert-success clearfix' role='alert'>";
 					echo  "<div class='pull-left' style='margin-top: 7px !IMPORTANT;'>".$user.'</div>';
 					echo "<div>";
-					echo "<a class='btn btn-default pull-right' href='/admin/vpnusers/userdetails?username=".$user."' role='button'>details</a>";
+					echo "<a class='btn btn-default pull-right' href='/admin/vpnusers/userdetails.php?username=".$user."' role='button'>details</a>";
 					echo "</div>";
 				echo "</div>";
 				}
@@ -66,7 +66,7 @@ $pageTitle = "Peer overview";
 				echo "<div class='alert alert-warning clearfix' role='alert'>";
 					echo "<div class='pull-left' style='margin-top: 7px !IMPORTANT;'>".$user.'</div>';
 					echo "<div>";
-						echo "<a class='btn btn-default pull-right' href='/admin/vpnusers/userdetails?username=".$user."' role='button'>details</a>";
+						echo "<a class='btn btn-default pull-right' href='/admin/vpnusers/userdetails.php?username=".$user."' role='button'>details</a>";
 					echo "</div>";
 				echo "</div>";
 				}
