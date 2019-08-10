@@ -45,7 +45,7 @@ $BitStatArr = explode(',', $rsArr[0]);
 				<?php
 
 				
-				$status = exec('cat /etc/openvpn/openvpn-status.log | grep ' . $username);
+				$status = exec('cat /var/log/openvpn/openvpn-status.log | grep ' . $username);
 				$routes = exec("cat /etc/openvpn/ccd/".$username." | sed -r 's/^.{7}//'");
 				$StatsArray = explode(',', $status);
 				echo $username."</h4>";
