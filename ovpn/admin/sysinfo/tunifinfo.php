@@ -4,13 +4,13 @@ $ifinfo = shell_exec('ifconfig tun1');
 $hostname = shell_exec('hostname');
 $date = shell_exec('date "+%A %W %Y %X"');
 //echo "<pre>$output</pre>";
-$pageTitle = "tun0 interface statistics";
+$pageTitle = "tun1 interface statistics";
 
 ?>
 
 <html>
 <head>
-<title>DSC ovpn tun0 status</title>
+<title>DSC ovpn tun1 status</title>
 <?php include '../header.php'; ?>
 </head>
 <body style='overflow: scroll !important;'>
