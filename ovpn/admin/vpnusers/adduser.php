@@ -31,10 +31,10 @@ $pageTitle = "Add users";
 
 		<div class='well'>
 			<br>
-<div class="row"><div class="col-lg-2"><a class="btn btn-primary btn-success" style="margin-left: 52px !IMPORTANT; margin-top: -7px !IMPORTANT;" href="/admin/wizards/rw1-wiz1" role="button">Wizard1</a></div>
+<div class="row"><div class="col-lg-2"><a class="btn btn-primary btn-success" style="margin-left: 52px !IMPORTANT; margin-top: -7px !IMPORTANT;" href="/admin/wizards/rw1-wiz1.php" role="button">Wizard1</a></div>
 <div class="col-lg-8"> Roadwarrior1 (dialup VPN; single user; all internet traffic goes through the VPN)</div></div>
 <br>
-<div class="row"><div class="col-lg-2"><a class="btn btn-primary btn-success" style="margin-left: 52px !IMPORTANT; margin-top: -7px !IMPORTANT;" href="/admin/wizards/s2s-wiz1" role="button">Wizard2</a></div>
+<div class="row"><div class="col-lg-2"><a class="btn btn-primary btn-success" style="margin-left: 52px !IMPORTANT; margin-top: -7px !IMPORTANT;" href="/admin/wizards/s2s-wiz1.php" role="button">Wizard2</a></div>
 <div class="col-lg-8"> site2site (remote subnet can communicate wit local subnet; only subnet traffic goes through VPN)</div></div>
 <br>
 <div class="row"><div class="col-lg-2"><a class="btn btn-primary btn-danger " style="margin-left: 52px !IMPORTANT; margin-top: -7px !IMPORTANT;" href="javascript:window.location.reload(true)" role="button" disabled>Wizard3</a></div>
