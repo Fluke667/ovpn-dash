@@ -3,7 +3,7 @@ $date = shell_exec('date "+%A %W %Y %X"');
 $hostname = shell_exec('hostname');
 $username = $_GET['username'];
 $rsArr = array();
-echo exec("cat /etc/openvpn/openvpn-status.log | grep ".$username, $rsArr);
+echo exec("cat /var/log/openvpn/openvpn-status.log | grep ".$username, $rsArr);
 $BitStatArr = explode(',', $rsArr[0]);
 				
 
@@ -106,7 +106,7 @@ $BitStatArr = explode(',', $rsArr[0]);
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					<a role="button" class="btn btn-default" href="/admin/wizards/rw-remove?clientname=<?=$username?>">Delete</a>
+					<a role="button" class="btn btn-default" href="/admin/wizards/rw-remove.php?clientname=<?=$username?>">Delete</a>
 
 				  </div>
 				</div>
@@ -131,7 +131,7 @@ $BitStatArr = explode(',', $rsArr[0]);
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-					<a role="button" class="btn btn-default" href="/admin/wizards/s2s-remove?clientname=<?=$username?>&subnet=<?=$routeArray[0]?>&netmask=<?=$routeArray[1]?>">Delete</a>
+					<a role="button" class="btn btn-default" href="/admin/wizards/s2s-remove.php?clientname=<?=$username?>&subnet=<?=$routeArray[0]?>&netmask=<?=$routeArray[1]?>">Delete</a>
 
 				  </div>
 				</div>
@@ -168,7 +168,7 @@ $BitStatArr = explode(',', $rsArr[0]);
             <!-- Modal Body -->
             <div class="modal-body">
                 
-                <form class="form-horizontal" role="form" action="/admin/wizards/edits2s">
+                <form class="form-horizontal" role="form" action="/admin/wizards/edits2s.php">
                   <div class="form-group">
                     <label  class="col-sm-2 control-label"
                               for="inputSubnet">Subnet</label>
@@ -238,7 +238,7 @@ $BitStatArr = explode(',', $rsArr[0]);
 				  <div class="modal-body">
 						<b>Edit route details for peer <?=$username?></b><br><br>
 						
-						<form role="form" action="/admin/vpnusers/edits2s" >			
+						<form role="form" action="/admin/vpnusers/edits2s.php" >			
 
 						<div class="row">
 						 
