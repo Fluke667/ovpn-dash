@@ -50,8 +50,8 @@ done
 
 
 
-oldiroute=$(cat /etc/openvpn/ccd/$CLIENTNAME)
-oldroute=$(cat /etc/openvpn/ccd/$CLIENTNAME | sed -r 's/^.{7}//')
+oldiroute=$(cat /etc/openvpn/client/$CLIENTNAME)
+oldroute=$(cat /etc/openvpn/client/$CLIENTNAME | sed -r 's/^.{7}//')
 regex=$(echo "route "$oldroute)
 #echo $oldroute
 #echo $oldiroute
@@ -59,7 +59,7 @@ regex=$(echo "route "$oldroute)
 #exit 1
 
 
-sed  -i '/'"$oldiroute"'/c\iroute '"$SUBNET $NETMASK"'' /etc/openvpn/ccd/$CLIENTNAME
+sed  -i '/'"$oldiroute"'/c\iroute '"$SUBNET $NETMASK"'' /etc/openvpn/client/$CLIENTNAME
 sed  -i '/'"$regex"'/c\route '"$SUBNET $NETMASK"'' /etc/openvpn/openvpn.conf
 
 
