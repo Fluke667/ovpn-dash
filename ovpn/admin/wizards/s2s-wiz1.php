@@ -29,7 +29,7 @@ $pageTitle = "User creation wizard s2s template - step 1";
 						<br>
 
 		<div class='well'>
-			<form id="myform" action="/admin/wizards/s2s-wiz2" >			
+			<form id="myform" action="/admin/wizards/s2s-wiz2.php" >			
 			<div class="row">
 			  <div class="col-lg-4">
 				
