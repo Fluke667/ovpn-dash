@@ -36,7 +36,7 @@ exec('/bin/ls /etc/openvpn/ccd', $users);
 $usercount = 0;
 
 foreach ($users as &$user){
-	$result=exec('cat /etc/openvpn/openvpn-status.log | grep ' . $user);
+	$result=exec('cat /var/log/openvpn/openvpn-status.log | grep ' . $user);
 				if ($result){
 					$usercount=$usercount+1;	
 				}	
@@ -87,7 +87,7 @@ $pageTitle = "openVPN Dashboard";
 
 						echo "<div class='col-lg-6'>";
 								if ($ovpnactive == "active"){
-									echo "<pre style='height:93px; '><b>openVPN service status: running </b><button style='padding-top: 1px !IMPORTANT; margin-bottom: 2px !IMPORTANT;' class='btn btn-primary btn-success btn-sm' role='button' disabled></button><a href='/admin/vpnconfig/servicerestartselect'><br><br><b>Restart services</b></a></pre>";			 
+									echo "<pre style='height:93px; '><b>openVPN service status: running </b><button style='padding-top: 1px !IMPORTANT; margin-bottom: 2px !IMPORTANT;' class='btn btn-primary btn-success btn-sm' role='button' disabled></button><a href='/admin/vpnconfig/servicerestartselect.php'><br><br><b>Restart services</b></a></pre>";			 
 									
 								}else{
 									echo "<pre style='height:93px; '><b>openVPN service status: down </b><button style='padding-top: 1px !IMPORTANT; margin-bottom: 2px !IMPORTANT; ' class='btn btn-primary btn-danger btn-sm' role='button' disabled></button><a href='/admin/vpnconfig/servicerestartselect.php'><br><br><b>Restart services</b></a></pre>";
@@ -98,7 +98,7 @@ $pageTitle = "openVPN Dashboard";
 
 						echo "<div class='col-lg-6'>";
 						if ($usercount > 0){}
-						$link="<a href='/admin/vpnusers/showusers'>View vpn peer list</a>";
+						$link="<a href='/admin/vpnusers/showusers.php'>View vpn peer list</a>";
 						echo "<pre style='margin-left: -4px;'><b><div class='pull-left'>Active connections: ".$usercount."<br>Total peer count: ".$clientcount."<br>".$link."</b></div></pre>";
 						echo "</div>";
 
@@ -130,7 +130,7 @@ $pageTitle = "openVPN Dashboard";
 				<span class="sr-only">actual load: <?=$load[0];?> percent</span>
 			  </div>
 			</div>
-			<div style="font-size: 13px; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"><b><a href='/admin/sysinfo/procinfo'>View running processes</a></b></div>
+			<div style="font-size: 13px; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"><b><a href='/admin/sysinfo/procinfo.php'>View running processes</a></b></div>
 	
 </div>
 </div>
@@ -147,7 +147,7 @@ $pageTitle = "openVPN Dashboard";
 				<span class="sr-only">mem usage: <?=$memused;?> of <?=$mem;?> bytes</span>
 			  </div>
 			</div>
-			<div style="font-size: 13px; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"><b><a href='/admin/sysinfo/meminfo'>View memory allocation</a></b></div>
+			<div style="font-size: 13px; font-family: Menlo,Monaco,Consolas,Courier New,monospace;"><b><a href='/admin/sysinfo/meminfo.php'>View memory allocation</a></b></div>
 			</div>
 			</div>
 			</td>
@@ -165,4 +165,3 @@ $pageTitle = "openVPN Dashboard";
 </div>
 </body>
 </html>
-
