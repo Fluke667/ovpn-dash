@@ -58,8 +58,8 @@ route=$SUBNET" "$NETMASK
 
 #exit 1
 
-sed -n -i '/#subnet for '$CLIENTNAME':/!p' /etc/openvpn/server.conf
-sed -n  -i '/route '$SUBNET' '$NETMASK'/!p' /etc/openvpn/server.conf
+sed -n -i '/#subnet for '$CLIENTNAME':/!p' /etc/openvpn/openvpn.conf
+sed -n  -i '/route '$SUBNET' '$NETMASK'/!p' /etc/openvpn/openvpn.conf
 # exit 1
 
 cd /etc/openvpn/easy-rsa2/
