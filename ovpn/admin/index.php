@@ -90,7 +90,7 @@ $pageTitle = "openVPN Dashboard";
 									echo "<pre style='height:93px; '><b>openVPN service status: running </b><button style='padding-top: 1px !IMPORTANT; margin-bottom: 2px !IMPORTANT;' class='btn btn-primary btn-success btn-sm' role='button' disabled></button><a href='/admin/vpnconfig/servicerestartselect'><br><br><b>Restart services</b></a></pre>";			 
 									
 								}else{
-									echo "<pre style='height:93px; '><b>openVPN service status: down </b><button style='padding-top: 1px !IMPORTANT; margin-bottom: 2px !IMPORTANT; ' class='btn btn-primary btn-danger btn-sm' role='button' disabled></button><a href='/admin/vpnconfig/servicerestartselect'><br><br><b>Restart services</b></a></pre>";
+									echo "<pre style='height:93px; '><b>openVPN service status: down </b><button style='padding-top: 1px !IMPORTANT; margin-bottom: 2px !IMPORTANT; ' class='btn btn-primary btn-danger btn-sm' role='button' disabled></button><a href='/admin/vpnconfig/servicerestartselect.php'><br><br><b>Restart services</b></a></pre>";
 								echo "";
 								}								
 						echo "</div>";
