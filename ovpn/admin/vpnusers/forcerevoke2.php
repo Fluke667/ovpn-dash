@@ -24,7 +24,7 @@ $pageTitle = "Certificate revocation results";
 		<br>
 		<div class="panel panel-default">
 		  <div class="panel-body">
-						 <br><p><a class="btn btn-primary btn-lg" href="../vpninfo/calog" role="button">back to CA revocation list</a><tab>
+						 <br><p><a class="btn btn-primary btn-lg" href="../vpninfo/calog.php" role="button">back to CA revocation list</a><tab>
 						<a class="btn btn-primary btn-lg" style="margin-left: 12px !IMPORTANT;" href="../" role="button">back to Dashboard</a></p>
 						<br>
 
