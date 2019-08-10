@@ -54,7 +54,7 @@ rm -rf  $OUTDIR
 #exit 1
 
 
-rm -rf /etc/openvpn/ccd/$CLIENTNAME
+rm -rf /etc/openvpn/client/$CLIENTNAME
 #rm keys/$CLIENTNAME.*
 
 
