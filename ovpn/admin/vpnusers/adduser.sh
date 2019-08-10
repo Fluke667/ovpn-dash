@@ -115,7 +115,7 @@ if [ $CLIENTTYPE = "s2s" ]; then
 #	rm $OUTDIR/*.key
 #	rm $OUTDIR/*.conf
 
-	echo "iroute $SUBNET $NETMASK" > /etc/openvpn/ccd/$CLIENTNAME
+	echo "iroute $SUBNET $NETMASK" > /etc/openvpn/client/$CLIENTNAME
 
 
 elif [[ $CLIENTTYPE = "rw1"  ||  $CLIENTTYPE = "rw2" ]]; then
@@ -151,7 +151,7 @@ elif [[ $CLIENTTYPE = "rw1"  ||  $CLIENTTYPE = "rw2" ]]; then
 
 
 	
-	echo "" > /etc/openvpn/ccd/$CLIENTNAME
+	echo "" > /etc/openvpn/client/$CLIENTNAME
 
 
 fi
