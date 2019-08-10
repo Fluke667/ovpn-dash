@@ -1,6 +1,6 @@
 
 <?php
-$output = shell_exec('cat /etc/openvpn/openvpn-status.log');
+$output = shell_exec('cat /var/log/openvpn/openvpn-status.log');
 $hostname = shell_exec('hostname');
 $date = shell_exec('date "+%A %W %Y %X"');
 //echo "<pre>$output</pre>";
