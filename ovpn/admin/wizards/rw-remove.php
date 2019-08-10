@@ -23,7 +23,7 @@ $pageTitle = "User removal (roadwarrior)";
 		<br>
 		<div class="panel panel-default">
 		  <div class="panel-body">
-						 <br><p><a class="btn btn-primary btn-lg" href="/admin/vpnusers/showusers" role="button">back to user overview</a><tab>
+						 <br><p><a class="btn btn-primary btn-lg" href="/admin/vpnusers/showusers.php" role="button">back to user overview</a><tab>
 						<a class="btn btn-primary btn-lg" style="margin-left: 12px !IMPORTANT;" href="../" role="button">back to Dashboard</a></p>
 						<br>
 
