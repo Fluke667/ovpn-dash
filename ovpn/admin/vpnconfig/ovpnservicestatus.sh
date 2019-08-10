@@ -18,7 +18,7 @@ not_root() {
 
 
 
-service openvpn status  2>&1
+tail -F /var/log/openvpn/openvpn-status.log  2>&1
 
 
 exit 0
