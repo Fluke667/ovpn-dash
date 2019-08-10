@@ -77,7 +77,7 @@ $compression="enabled";
 		  <div class="panel-body">
 						 <br><p><a class="btn btn-primary btn-lg" href="javascript:history.go(-1)" role="button">back</a><tab><a class="btn btn-primary btn-lg" style="margin-left: 12px !IMPORTANT;" href="javascript:window.location.reload(true)" role="button">reload current values</a></p><br>
 		<div class='well'>
-			<form role="form" id="formfield" action="/admin/vpnconfig/changeconf">
+			<form role="form" id="formfield" action="/admin/vpnconfig/changeconf.php">
 
 				<div class="row">
 					<div class="col-lg-5">
