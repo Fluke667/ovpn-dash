@@ -60,7 +60,7 @@ regex=$(echo "route "$oldroute)
 
 
 sed  -i '/'"$oldiroute"'/c\iroute '"$SUBNET $NETMASK"'' /etc/openvpn/ccd/$CLIENTNAME
-sed  -i '/'"$regex"'/c\route '"$SUBNET $NETMASK"'' /etc/openvpn/server.conf
+sed  -i '/'"$regex"'/c\route '"$SUBNET $NETMASK"'' /etc/openvpn/openvpn.conf
 
 
 echo "edit done"
