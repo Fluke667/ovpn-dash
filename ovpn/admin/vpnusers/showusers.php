@@ -2,7 +2,7 @@
 <?php
 $users= array();
 
-exec('/bin/ls /etc/openvpn/ccd', $users);
+exec('/bin/ls /etc/openvpn/client', $users);
 
 $hostname = shell_exec('hostname');
 $date = shell_exec('date "+%A %W %Y %X"');
@@ -52,7 +52,7 @@ $pageTitle = "Peer overview";
 			<br>
 		<?php foreach ($users as &$user)
 			{
-				$result=exec('cat /etc/openvpn/openvpn-status.log | grep ' . $user);
+				$result=exec('cat /var/log/openvpn/openvpn-status.log | grep ' . $user);
 				if ($result){
 				echo "<div class='alert alert-success clearfix' role='alert'>";
 					echo  "<div class='pull-left' style='margin-top: 7px !IMPORTANT;'>".$user.'</div>';
