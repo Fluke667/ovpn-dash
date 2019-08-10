@@ -32,7 +32,7 @@ $fh = fopen('/proc/meminfo','r');
   fclose($fh);
 
 $users= array();
-exec('/bin/ls /etc/openvpn/ccd', $users);
+exec('/bin/ls /etc/openvpn/client', $users);
 $usercount = 0;
 
 foreach ($users as &$user){
