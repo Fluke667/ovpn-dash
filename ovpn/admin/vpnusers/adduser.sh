@@ -102,9 +102,9 @@ if [ $CLIENTTYPE = "s2s" ]; then
 	cp /etc/openvpn/easy-rsa2/keys/$CLIENTNAME.crt $OUTDIR/
 	cp /etc/openvpn/easy-rsa2/keys/$CLIENTNAME.key $OUTDIR/
 
-	sed -i -e '$a\'  /etc/openvpn/server.conf
-	sed -i -e '$a\#subnet for '"$CLIENTNAME"':'  /etc/openvpn/server.conf
-	sed -i -e '$a\route '"$SUBNET"' '"$NETMASK"'' /etc/openvpn/server.conf
+	sed -i -e '$a\'  /etc/openvpn/openvpn.conf
+	sed -i -e '$a\#subnet for '"$CLIENTNAME"':'  /etc/openvpn/openvpn.conf
+	sed -i -e '$a\route '"$SUBNET"' '"$NETMASK"'' /etc/openvpn/openvpn.conf
 
 	cp $SCRIPTDIR/s2s_example.conf $OUTDIR/$CLIENTNAME.conf
 	sed -i -e 's/servername.com/'"$SERVER"'/g' $OUTDIR/$CLIENTNAME.conf
