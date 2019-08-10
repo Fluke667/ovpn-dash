@@ -7,7 +7,7 @@ $result=shell_exec('sudo /var/www/html/admin/vpnconfig/restartovpn.sh');
 <head>
 
 
-	<meta http-equiv="refresh" content="3;url=/admin/vpnconfig/servicerestartselect" />
+	<meta http-equiv="refresh" content="3;url=/admin/vpnconfig/servicerestartselect.php" />
 
 	<title>DSC ovpnRestart</title>
 	<?php include '../header.php'; ?>
