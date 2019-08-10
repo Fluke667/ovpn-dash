@@ -29,7 +29,7 @@ $pageTitle = "Certificate revocation";
 						<br>
 
 		<div class='well'>
-			<form id="myform" action="/admin/vpnusers/forcerevoke2" >			
+			<form id="myform" action="/admin/vpnusers/forcerevoke2.php" >			
 			<div class="row">
 			  <div class="col-lg-4">
 				
