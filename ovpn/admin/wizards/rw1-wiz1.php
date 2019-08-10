@@ -29,7 +29,7 @@ $pageTitle = "User creation wizard RoadWarrior1 template - step 1";
 						<br>
 
 		<div class='well'>
-			<form id="myform" action="/admin/wizards/rw1-wiz2" >			
+			<form id="myform" action="/admin/wizards/rw1-wiz2.php" >			
 			<div class="row">
 			  <div class="col-lg-4">
 				
