@@ -26,8 +26,8 @@ $date = shell_exec('date "+%A %W %Y %X"');
 		<div class="panel panel-default col-md-offset-2 col-md-8">
 		  <div class="panel-body" >
 						 <br><p><a class="btn btn-primary btn-lg" href="javascript:history.go(-1)" role="button">back</a><tab>
-						<a class="btn btn-primary btn-lg" style="margin-left: 12px !IMPORTANT;" href="/admin/vpnconfig/restoreconf" role="button">upload another file</a><tab>
-						<a class="btn btn-primary btn-lg" style="margin-left: 12px !IMPORTANT;" href="/admin/vpnconfig/cleanup" role="button">Cleanup upload folder</a>
+						<a class="btn btn-primary btn-lg" style="margin-left: 12px !IMPORTANT;" href="/admin/vpnconfig/restoreconf.php" role="button">upload another file</a><tab>
+						<a class="btn btn-primary btn-lg" style="margin-left: 12px !IMPORTANT;" href="/admin/vpnconfig/cleanup.php" role="button">Cleanup upload folder</a>
 </p>
 <br>
 
@@ -86,7 +86,7 @@ $date = shell_exec('date "+%A %W %Y %X"');
 					$copyresult = shell_exec('cat '.$target_file);
 					echo "<pre class='text-left'>".$copyresult."</pre><br>";
 					echo '<p><a class="btn btn-primary btn-lg" href="javascript:history.go(-1)" role="button">Cancel</a><tab>';
-					echo'<a class="btn btn-primary btn-lg" style="margin-left: 6px !IMPORTANT;" href="/admin/vpnconfig/applyconf?confname='.basename( $_FILES["fileToUpload"]["name"]).'" role="button">Apply</a></p>';
+					echo'<a class="btn btn-primary btn-lg" style="margin-left: 6px !IMPORTANT;" href="/admin/vpnconfig/applyconf.php?confname='.basename( $_FILES["fileToUpload"]["name"]).'" role="button">Apply</a></p>';
 				}
 
 				?>
